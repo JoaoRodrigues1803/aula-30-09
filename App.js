@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, } from 'react-native';
+
+import dados from './service/dados'
 
 export default function App() {
+  console.log(dados.state, dados.cities);
   return (
     <View style={styles.container}>
-      <Text>Nome alguma coisa</Text>
+      <Text>app Name teste</Text>
       <StatusBar style="auto" />
+      
     </View>
   );
 }
